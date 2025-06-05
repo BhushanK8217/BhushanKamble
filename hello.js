@@ -1,37 +1,21 @@
-console.log("Helloo World");
-const pi="3.14";
-console.log(pi)
-let num=21;
-if(num %2==0)
+// console.log("Helloo World");
+// const pi="3.14";
+// console.log(pi)
+// let num=21;
+// if(num %2==0)
+// {
+//     console.log("Num is even")
+// }
+// else{
+//     console.log("Num is odd")
+// }
+// const prompt = require('prompt-sync')();
+// const name= prompt("What is your name?");
+// console.log("Hello,"+name+"!");
+const sq=function (x)
 {
-    console.log("Num is even")
+    let ans = 0;
+    ans = x*x;
+    return ans;
 }
-else{
-    console.log("Num is odd")
-}
-let day=3;
-let dayName;
-switch(day)
-{
-    case 1:
-        dayName="Monday";
-        break;
-    case 2:
-        dayName="Tuesday";
-        break;
-    case 3:
-        dayName="Wednesday";
-        break;
-    case 4:
-        dayName="Thursday";
-        break;
-    case 5:
-        dayName="Friday";
-        break;
-    case 6:
-        dayName="Saturday";
-        break;
-    case 7:
-        dayName="Sunday";
-        break;
-}
+console.log("the square of the number is "+ sq(2));
