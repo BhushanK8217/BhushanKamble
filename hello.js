@@ -12,10 +12,20 @@
 // const prompt = require('prompt-sync')();
 // const name= prompt("What is your name?");
 // console.log("Hello,"+name+"!");
-const sq=function (x)
+// const sq=function (x)
+// {
+//     let ans = 0;
+//     ans = x*x;
+//     return ans;
+// }
+// console.log("the square of the number is "+ sq(2));
+function greet(name, cb)
 {
-    let ans = 0;
-    ans = x*x;
-    return ans;
+    console.log("Hello "+name+"!");
+    cb();
 }
-console.log("the square of the number is "+ sq(2));
+function sayGoodBye()
+{
+    console.log("GoodBye");
+}
+greet("Bhushan", sayGoodBye);
